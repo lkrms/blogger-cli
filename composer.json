@@ -1,0 +1,43 @@
+{
+    "name": "lkrms/blogger-cli",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Luke Arms",
+            "email": "luke@linacreative.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "salient/cache": "^0.99",
+        "salient/cli": "^0.99",
+        "salient/console": "^0.99",
+        "salient/curler": "^0.99",
+        "salient/sync": "^0.99",
+        "salient/utils": "^0.99"
+    },
+    "require-dev": {
+        "phpstan/extension-installer": "^1",
+        "phpstan/phpstan": "^1",
+        "phpstan/phpstan-deprecation-rules": "^1",
+        "salient/phpstan": "^0.99",
+        "salient/sli": "^0.99"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lkrms\\Blogger\\": "src/"
+        }
+    },
+    "bin": [
+        "bin/blogger"
+    ],
+    "config": {
+        "allow-plugins": {
+            "phpstan/extension-installer": true
+        },
+        "platform": {
+            "php": "7.4.33"
+        },
+        "sort-packages": true
+    }
+}

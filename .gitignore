@@ -1,0 +1,16 @@
+/vendor
+composer.phar
+
+phpstan.neon
+
+phpunit.xml
+.phpunit.*
+
+.php-cs-fixer.cache
+
+.env
+*.log
+/var
+
+/.ci
+/build

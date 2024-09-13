@@ -1,0 +1,16 @@
+#!/usr/bin/env php
+<?php
+
+use Lkrms\Blogger\Provider\BloggerApi3;
+use Salient\Cli\CliApplication;
+use Salient\Sync\Command\SendHttpSyncProviderRequest;
+
+require dirname(__DIR__) . '/vendor/autoload.php';
+
+(new CliApplication(dirname(__DIR__)))
+    ->logOutput()
+    ->startCache()
+    ->startSync()
+    ->provider(BloggerApi3::class)
+    ->command(['get'], SendHttpSyncProviderRequest::class)
+    ->runAndExit();

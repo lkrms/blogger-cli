@@ -1,0 +1,10 @@
+{
+    "src": [
+        "bin/blogger",
+        "src"
+    ],
+    "enable": [
+        "strict-lists"
+    ],
+    "operatorsFirst": true
+}
